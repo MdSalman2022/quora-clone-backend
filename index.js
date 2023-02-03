@@ -1,22 +1,14 @@
 require('dotenv').config()
 const express = require('express');
 const cors = require('cors');
-// var passport = require('passport');
-// const cookieSession = require('cookie-session');
+
 const app = express();
-// const passportSetup = require('./passport');
-// const authRoute = require("./routes/auth");
-// require('./authenticate');
+
 app.use(cors())
 
- 
-// app.use(passport.initialize());
-// app.use(passport.session)
+
 
 app.use(express.json())
-
- 
-// app.use("/auth", authRoute);
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const port = process.env.PORT || 5000
